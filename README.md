@@ -22,9 +22,9 @@ return [
             'access_key' => env('OSS_ACCESS_KEY'),
             'access_secret' => env('OSS_ACCESS_SECRET'),
             'bucket' => 'your_bucket',
-            'endpoint' => 'https://oss-cn-shanghai.aliyuncs.com', // OSS 外网节点或自定义外部域名，这里需要自己拼写http和https协议 前缀。
-            'cdnDomain' => '<CDN domain, cdn域名>', // bucket 绑定的cdn地址。
-            'prefix' => '',//设置上传是的根前缀
+            'endpoint' => 'https://oss-cn-shanghai.aliyuncs.com', // OSS 外网节点或自定义外部域名，这里需要自己拼写http和https协议前缀。
+            'cdnDomain' => '<CDN domain, cdn域名>', // bucket绑定的cdn地址。
+            'prefix' => '',//设置上传的根前缀
         ],
     ]
 ];
