@@ -1,0 +1,37 @@
+{
+    "name": "cjz/laravel-flysystem-oss",
+    "type": "library",
+    "description": "Aliyun OSS filesystem adapter for Flysystem.",
+    "keywords": ["oss", "flysystem", "阿里云", "storage", "file", "aliyun"],
+
+    "license": "mit",
+    "authors": [
+        {
+            "name": "cjz",
+            "email": "695345788@qq.com"
+
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.1",
+        "league/flysystem": "^3.12.0",
+        "aliyuncs/oss-sdk-php": "^2.5.0"
+    },
+    "require-dev": {
+        "league/flysystem-adapter-test-utilities": "^3.12.0",
+        "phpunit/phpunit": "^9.5.8 || ^10.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cjz\\LaravelFilesystemOss\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cjz\\LaravelFilesystemOss\\OssStorageServiceProvider"
+            ]
+        }
+    }
+}
