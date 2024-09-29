@@ -40,7 +40,7 @@ $storage = Storage::disk('aliyunoss');
 
 Storage::put('1.txt','内容'); # 上传一个文件
 Storage::put('1.txt','内容',[Config::OPTION_VISIBILITY=>Visibility::PRIVATE]);# 上传一个私有文件
-$request->file('1.mp4')->store('1.mp4',['disk'=>'aliyunoss']);# 上传表单中的文件
+$request->file('file')->store('1.mp4',['disk'=>'aliyunoss']);# 上传表单中的文件
 Storage::url('1.txt');#获取文件对应的完整url
 
 
